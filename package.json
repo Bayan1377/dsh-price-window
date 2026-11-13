@@ -1,6 +1,6 @@
 {
   "name": "dsh-price-window",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DeepSeek tariff window in the DSH sidebar footer: peak in red, off-peak (-50%) in yellow, with a clock showing when the price flips",
   "type": "module",
   "main": "lib/index.js",
@@ -44,6 +44,14 @@
   ],
   "scripts": {
     "test": "node tests/price-window.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bayan1377/dsh-price-window.git"
+  },
+  "homepage": "https://github.com/Bayan1377/dsh-price-window#readme",
+  "bugs": {
+    "url": "https://github.com/Bayan1377/dsh-price-window/issues"
   },
   "author": "bayan1377",
   "license": "MIT"
