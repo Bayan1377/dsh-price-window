@@ -1,0 +1,50 @@
+{
+  "name": "dsh-price-window",
+  "version": "0.1.0",
+  "description": "DeepSeek tariff window in the DSH sidebar footer: peak in red, off-peak (-50%) in yellow, with a clock showing when the price flips",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "deepseek",
+    "harness",
+    "tariff",
+    "pricing",
+    "off-peak",
+    "sidebar",
+    "badge"
+  ],
+  "scripts": {
+    "test": "node tests/price-window.test.mjs"
+  },
+  "author": "bayan1377",
+  "license": "MIT"
+}

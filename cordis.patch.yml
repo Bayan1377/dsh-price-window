@@ -1,0 +1,6 @@
+# dsh bundle patch: вставляет бейдж тарифа в стек слоёв профиля.
+# Хранится в пакете, а не в cordis.patch.yml профиля: обновление Harness
+# переписывает профильный патч и могло бы потерять запись.
+- insert:
+    - id: price-window
+      name: 'dsh-price-window'
