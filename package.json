@@ -1,6 +1,6 @@
 {
   "name": "dsh-price-window",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "DeepSeek tariff window in the DSH sidebar footer: peak in red, off-peak (-50%) in yellow, with a clock showing when the price flips",
   "type": "module",
   "main": "lib/index.js",
